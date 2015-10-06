@@ -2,12 +2,10 @@ package tree_and_graph;
 
 import CtCILibrary.TreeNode;
 
+// Given a sorted (increasing order) array with unique integer,
+// create a BST with minimal height
 public class Q4_3 {
 
-	// Given a sorted (increasing order) array with unique integer,
-	// create a BST with minimal height
-
-	
 	// my method 1 -- copy array
 	public static TreeNode generateMinimalBST(int[] arr) {
 		if (arr.length <= 0)

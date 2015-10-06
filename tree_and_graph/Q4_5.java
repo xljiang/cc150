@@ -2,8 +2,9 @@ package tree_and_graph;
 
 import CtCILibrary.TreeNode;
 
+// check if a binary tree is a binary search tree
 public class Q4_5 {
-	// check if a binary tree is a binary search tree
+	
 	public static boolean isBSearchTree(TreeNode root){
 		return isBSearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
 	}
