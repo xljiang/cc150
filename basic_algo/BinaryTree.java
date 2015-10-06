@@ -242,6 +242,7 @@ public class BinaryTree {
 	path 3: 5 8 13 
 	path 4: 5 8 4 1
 	for example, the sum of the values on the 5-4-11-7 path is 5 + 4 + 11 + 7 = 27.
+	
 	Given a binary tree and a sum, return true if the tree has a root-to-leaf path such that 
 	adding up all the values along the path equals the given sum. 
 	Return false if no such path can be found. 
@@ -269,6 +270,8 @@ public class BinaryTree {
 	// Hint: In C, C++, and Java, probably the best solution is to create a recursive helper function 
 	// printPathsRecur(node, int path[], int pathLen), where the path array communicates the sequence of 
 	// nodes that led up to the current call. 
+	
+	// DFS
 	public void printPaths(){
 		int[] path = new int[maxDepth()];
 		printPathsRecur(root, path, 0);
