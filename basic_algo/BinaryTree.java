@@ -29,7 +29,7 @@ public class BinaryTree {
 	 * Constructor.
 	 * Create an empty binary tree -- a null root pointer.
 	 ******************************************************/
-	public void BinaryTree(){
+	public BinaryTree(){
 		root = null;
 	}
 	
@@ -253,9 +253,9 @@ public class BinaryTree {
 	}
 	
 	private boolean hasPathSum(Node node, int sum){
-		if (node == null) {
-			return sum == 0;
-		}
+		if (node == null) return false;
+		if (node.left == null && node.right == null)
+			return root.data == sum;
 		else {
 			return (hasPathSum(node.left, sum - node.data) || hasPathSum(node.right, sum - node.data));
 		}
