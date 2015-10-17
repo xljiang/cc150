@@ -3,9 +3,9 @@ package basic_algo;
 /**
  * Selection Sort
  * 
- * best: (n2) 
- * average: (n2) 
- * worst: (n2), space (1) 
+ * best: O(n^2) 
+ * average: O(n^2) 
+ * worst: O(n^2), space O(1) 
  * stable: No 
  * method: Selection
  * notes: stable with O(n) extra space, e.g. using Lists

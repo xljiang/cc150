@@ -3,9 +3,9 @@ package basic_algo;
 /**
  * Bubble Sort
  * 
- * best: (n)
- * average: (n2)
- * worst: (n2), space (1)
+ * best: O(n)
+ * average: O(n^2)
+ * worst: O(n^2), space O(1)
  * stable: Yes
  * method: Exchanging
  * notes: tiny code size
