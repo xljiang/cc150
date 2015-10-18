@@ -1,7 +1,5 @@
 package basic_algo;
 
-import static org.junit.Assert.*;
-
 import org.junit.Test;
 
 public class BinaryTreeTest {
