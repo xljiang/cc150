@@ -20,9 +20,9 @@ public class BinarySearch {
 		while(low <= high){
 			mid = (low + high)/ 2;
 			if (arr[mid] < val){
-				high = mid - 1;
-			} else if (arr[mid] > val){
 				low = mid + 1;
+			} else if (arr[mid] > val){
+				high = mid - 1;
 			} else {
 				return mid;
 			}
@@ -50,7 +50,7 @@ public class BinarySearch {
 	// Test
 	public static void main(String[] args) {
 		int[] arr = {0,2,5,6,8,20};
-		int a = binarySearch(arr, 5);
+		int a = binarySearch(arr, 0);
 		int b = binarySearchRec(arr, 5);
 		System.out.println(a + ", " + b);
 	}
